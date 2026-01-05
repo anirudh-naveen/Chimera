@@ -209,7 +209,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -628,7 +628,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 1536
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 0ae3eacd9529a72449ff77d368265a4a, type: 2}
   m_TargetDisplay: 0
@@ -637,7 +637,7 @@ Camera:
   m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
+  m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
 --- !u!4 &222773666
@@ -929,7 +929,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1023
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -938,7 +938,7 @@ Camera:
   m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
+  m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
 --- !u!4 &277358549
@@ -1535,7 +1535,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2727,6 +2727,63 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4239393731587477093, guid: fb093ec1a01024af8811d0834995d57d, type: 3}
   m_PrefabInstance: {fileID: 1365507415}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1546171533
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3401148626683263606, guid: 96712c08b87b54291a4406cbdaf609b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3401148626683263606, guid: 96712c08b87b54291a4406cbdaf609b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3401148626683263606, guid: 96712c08b87b54291a4406cbdaf609b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3401148626683263606, guid: 96712c08b87b54291a4406cbdaf609b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3401148626683263606, guid: 96712c08b87b54291a4406cbdaf609b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3401148626683263606, guid: 96712c08b87b54291a4406cbdaf609b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3401148626683263606, guid: 96712c08b87b54291a4406cbdaf609b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3401148626683263606, guid: 96712c08b87b54291a4406cbdaf609b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3401148626683263606, guid: 96712c08b87b54291a4406cbdaf609b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3401148626683263606, guid: 96712c08b87b54291a4406cbdaf609b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7631787816440006872, guid: 96712c08b87b54291a4406cbdaf609b9, type: 3}
+      propertyPath: m_Name
+      value: SceneLights
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 96712c08b87b54291a4406cbdaf609b9, type: 3}
 --- !u!1 &1551110496
 GameObject:
   m_ObjectHideFlags: 0
@@ -2783,7 +2840,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -247624,7 +247681,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -318566,6 +318623,8 @@ MonoBehaviour:
   PlayCanvas: {fileID: 1365507416}
   EndCanvas: {fileID: 470470024}
   BioguText: {fileID: 1338458436}
+  Lights:
+  - {fileID: 5447637238358439627, guid: a4701a62622dd449b80a9528afb54682, type: 3}
   Monsters:
   - {fileID: 7313375578454353807, guid: 1332c9a63a3654d1480dcfa7abd7ff13, type: 3}
   - {fileID: 9111803279317786448, guid: dda228e402c7141739acddcc5ba50f15, type: 3}
@@ -318693,3 +318752,4 @@ SceneRoots:
   - {fileID: 1365507415}
   - {fileID: 267680604}
   - {fileID: 1312936695}
+  - {fileID: 1546171533}

@@ -90,8 +90,8 @@ Material:
     - _CausticColor: {r: 0.31, g: 1, b: 0.878, a: 1}
     - _CausticHighlightsColor: {r: 0.722, g: 1, b: 0.976, a: 1}
     - _DeepColor: {r: 0.016, g: 0.184, b: 0.239, a: 1}
-    - _GridMin: {r: -33, g: -88, b: 0, a: 0}
-    - _GridSize: {r: 112, g: 207, b: 0, a: 0}
+    - _GridMin: {r: -80, g: -40, b: 0, a: 0}
+    - _GridSize: {r: 175, g: 231, b: 0, a: 0}
     - _SeaFoamColor: {r: 0.9470549, g: 0.9874212, b: 0.9867875, a: 0}
     - _ShallowColor: {r: 0.247, g: 0.851, b: 0.82, a: 1}
     - _SpecularColor: {r: 0.91, g: 0.984, b: 1, a: 1}
