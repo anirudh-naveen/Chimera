@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7479699607703774492, guid: 91803b2b67f09434282d1bba34f1a550, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6402894302678925238, guid: ef5c4e0735aba4584a974a42cdac14d5, type: 3}
     m_RemovedComponents:
     - {fileID: 6748702636552630813, guid: 91803b2b67f09434282d1bba34f1a550, type: 3}
     m_RemovedGameObjects: []
@@ -121,7 +125,9 @@ MonoBehaviour:
   timeSinceLastTick: 0
   status_effect: {fileID: 0}
   Chimerafab: {fileID: 0}
+  attackSpeed: 0.7
   trig: {fileID: 3664482277409037550}
+  aggro: {fileID: 0}
   attackRange: 2
   speed: 300
   level: 1

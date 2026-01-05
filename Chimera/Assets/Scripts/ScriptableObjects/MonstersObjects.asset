@@ -15,4 +15,4 @@ MonoBehaviour:
   size: {x: 5, y: 5}
   placementType: 0
   addOffset: 1
-  iterationsMax: 20
+  iterationsMax: 25

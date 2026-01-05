@@ -38,6 +38,7 @@ public class CorridorFirstDungeonGeneration : SimpleRandomWalkDungeonGenerator /
     [SerializeField] private GameObject PlayCanvas;
     [SerializeField] private GameObject EndCanvas;
     [SerializeField] private TMP_Text BioguText;
+    [SerializeField] private List<GameObject> Lights;
     [SerializeField] private List<GameObject> Monsters;
     [SerializeField] private PlaceableObject placeable;
     private Dictionary<Vector2Int, HashSet<Vector2Int>> roomMapsDictionairy = new Dictionary<Vector2Int, HashSet<Vector2Int>>(); //key is the start position of each rooms generation and the value is that rooms final hashSet
@@ -47,10 +48,22 @@ public class CorridorFirstDungeonGeneration : SimpleRandomWalkDungeonGenerator /
         tilemapVisualizer.Clear();
         CorridorFirstGeneration();
         createExit();
-        SpawnMonsters();
+        SpawnLightsAndMonsters();
+        //SpawnMonsters();
+    }
+    private void SpawnLights()
+    {
+        DecorandHarvestableGeneration.CreateObjects(floorOnlyMap, Lights, placeable,
+            roomMapsDictionairy, corridorPositions, tilemapVisualizer);
     }
     private void SpawnMonsters()
     {
+        DecorandHarvestableGeneration.CreateObjects(floorOnlyMap, Monsters, placeable,
+            roomMapsDictionairy, corridorPositions, tilemapVisualizer);
+    }
+    private void SpawnLightsAndMonsters()
+    {
+        Monsters.AddRange(Lights);
         DecorandHarvestableGeneration.CreateObjects(floorOnlyMap, Monsters, placeable,
             roomMapsDictionairy, corridorPositions, tilemapVisualizer);
     }

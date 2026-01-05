@@ -63,6 +63,7 @@ MonoBehaviour:
   ability_description: Ability description has not been implemented yet
   scientist_description: Scientist description not been implemented yet
   ability_name: Sample Name
+  creature: {fileID: 0}
   rarity: 1
 --- !u!212 &203845908196129050
 SpriteRenderer:
@@ -87,7 +88,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
