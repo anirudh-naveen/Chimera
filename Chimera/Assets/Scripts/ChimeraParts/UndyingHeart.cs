@@ -9,6 +9,7 @@ using static UnityEngine.Rendering.DebugUI.Table;
 public class UndyingHeart : Creature
 {
     public Image img;
+    public GameObject Trigger;
     private bool less200 = false;
     private bool less100 = false;
     private float heartspeed = 5.0f;
@@ -43,7 +44,7 @@ public class UndyingHeart : Creature
                 sfxplayer[sfxplayer.Length - 1].PlayMusic(sfxplayer[sfxplayer.Length-1].HeartTrack2);
             }
             less200 = true;
-            heartspeed = 5.0f;
+            heartspeed = 3.0f;
         } else if (this.CurrentHealth <= 100 && !less100)
         {
             Debug.Log("heart under 100 health");
@@ -52,7 +53,7 @@ public class UndyingHeart : Creature
             {
                 sfxplayer[sfxplayer.Length - 1].PlayMusic(sfxplayer[sfxplayer.Length - 1].HeartTrack3);
             }
-            heartspeed = 10.0f;
+            heartspeed = 6.0f;
             less100 = true;
         }
         if (less200)
@@ -64,6 +65,15 @@ public class UndyingHeart : Creature
     {
         moveDirection = collision.gameObject.transform.position - transform.position;
         moveDirection.Normalize();
+    }
+    private new void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("something hit trigger");
+        if (collision.gameObject.Equals(Trigger))
+        {
+            Debug.Log("Hit bounds");
+            transform.position = new Vector3(14, 0, 0);
+        }
     }
     new void Die()
     {
