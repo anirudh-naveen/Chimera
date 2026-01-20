@@ -162,6 +162,11 @@ public class Globals : MonoBehaviour
             SceneManager.LoadScene("Chimera Select");
         }
     }*/
+
+    public void Hacks()
+    {
+        highestClearedLevel = 3;
+    }
     public static void ChimeraAbility(int x){
         //BIG ISSUE HERE COME BACK chimeras die during combat, party_indexes becomes out of date/out of range of the gameobjs
         if (x > -1 && x < chimerasInParty.Length)
