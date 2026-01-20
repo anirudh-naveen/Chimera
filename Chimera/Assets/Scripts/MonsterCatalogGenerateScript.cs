@@ -81,9 +81,9 @@ public class MonsterCatalogGenerateScript : MonoBehaviour
         currentEntry = Instantiate(prefab, new Vector3(-357, 192, 0), Quaternion.Euler(0, 0, 0)) as GameObject;
 
         GameObject monster = Monsters[index];
-        GameObject monster_head = monster.transform.GetChild(1).gameObject;
-        GameObject monster_body = monster.transform.GetChild(2).gameObject;
-        GameObject monster_tail = monster.transform.GetChild(3).gameObject;
+        GameObject monster_head = monster.transform.GetChild(2).gameObject;
+        GameObject monster_body = monster.transform.GetChild(3).gameObject;
+        GameObject monster_tail = monster.transform.GetChild(4).gameObject;
 
 
         currentEntry.transform.SetParent(contentRect.transform, false);
